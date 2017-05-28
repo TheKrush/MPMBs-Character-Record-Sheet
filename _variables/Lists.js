@@ -226,6 +226,12 @@ var CurrentFeats = {
 	skills : []
 };
 
+var CurrentMagicItems = {
+	known : [],
+	improvements : [],
+	skills : []
+};
+
 var IsNotReset = true;
 var IsNotImport = true;
 var IsNotFeatMenu = true;

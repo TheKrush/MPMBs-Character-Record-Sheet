@@ -4642,12 +4642,12 @@ function UAstartupCode() {
 	//create the magic items for the wondrous items class feature of the artificer
 	ClassList.artificer.features["wondrous invention"].extrachoices.forEach(function (theI) {
 		var theItem = theI.replace(/ *\(.*\)/, "");
-		if (MagicItemsList[theItem.toLowerCase()]) {
+		if (MagicItemList[theItem.toLowerCase()]) {
 			ClassList.artificer.features["wondrous invention"][theI.toLowerCase()] = {
 				name : theItem,
 				description : "",
 				source : ["UA:A", 3],
-				eval : "var maI = MagicItemsList[\"" + theItem.toLowerCase() + "\"]; AddMagicItem(maI.name, maI.attunement, maI.description, maI.weight, maI.descriptionLong);",
+				eval : "var maI = MagicItemList[\"" + theItem.toLowerCase() + "\"]; AddMagicItem(maI.name, maI.attunement, maI.description, maI.weight, maI.descriptionLong);",
 				removeeval : "RemoveMagicItem(\"" + theItem.toLowerCase() + "\");"
 			};
 		};
