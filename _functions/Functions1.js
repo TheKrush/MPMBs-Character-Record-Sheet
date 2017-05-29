@@ -6757,6 +6757,9 @@ function MakeMobileReady(toggle) {
 		}
 
 		Value("MakeMobileReady Remember", tempReadOnlyArray.toString() + "!#TheListSeparator#!" + tempNoPrintArray.toString());
+		
+		//hide the D20 warning so that it won't interfere with the bug in Acrobat Reader for iOS/Android
+		tDoc.getField("d20warning").rect = [0,0,0,0];
 	} else if (!toggle) {
 		var tempArrayBoth = What("MakeMobileReady Remember").split("!#TheListSeparator#!");
 		tempReadOnlyArray = tempArrayBoth[0].split(",");
