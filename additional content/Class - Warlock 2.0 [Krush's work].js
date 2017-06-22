@@ -9,9 +9,15 @@
 
 /*	-INFORMATION-
 	Subject:	Class
-	Effect:		This script modifies the "Warlock" class increasing spell slots at level 5, and level 20 in addition
-				to the normal spell slot increases. It also modifies the "Mystic Arcanum" feature to start at level 1,
-				and a spell is gained every other level one for each spell level.
+	Effect:		This script modifies the "Warlock" class to assist with spell casting abilities. This also makes the
+				level 20 (full warlock) more attractive for players.
+
+				Increases spell slots at level 5, and level 20 in addition to the normal spell slot increases.
+
+				Increases # of invocations at level 3, and level 20 in addition to the normal # of invocation increases.
+
+				Modifies the "Mystic Arcanum" feature to start at level 1, and a spell is gained every other level one
+				for each spell level.
 
 	Code by:	TheKrush
 	Date:		2017-06-22 (sheet v12.994)
